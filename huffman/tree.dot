@@ -1,0 +1,8 @@
+digraph {
+	node [fontename="Arial"];
+	n2 [shape = circle, label="3"]
+	n0 [shape = record, label="px=0|fq=1", color=RED]
+	n2 -> n0 [label=0]
+	n1 [shape = record, label="px=1|fq=2", color=RED]
+	n2 -> n1 [label=1]
+}
