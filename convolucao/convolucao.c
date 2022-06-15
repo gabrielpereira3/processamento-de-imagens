@@ -52,7 +52,6 @@ void convolucao(image In, image Out, int nl, int nc, int mn)
             //     valor = 0;
             Out[i * nc + j] = vetor[4];
             // Out[i * nc + j] = valor;
-            //
         }
 }
 
