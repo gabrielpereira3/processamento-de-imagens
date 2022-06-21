@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Jun 20 22:33:04 2022
+# Make data base, printed on Tue Jun 21 18:37:58 2022
 
 # Variables
 
@@ -17,7 +17,7 @@ make: *** No rule to make target 'all'.  Stop.
 # automatic
 ?F = $(notdir $?)
 # environment
-WSLENV = VSCODE_WSL_EXT_LOCATION/up:VSCODE_SERVER_TAR/up
+WSLENV = VSCODE_WSL_EXT_LOCATION/up
 # default
 .SHELLFLAGS := -c
 # environment
@@ -57,9 +57,7 @@ XDG_RUNTIME_DIR = /mnt/wslg/runtime-dir
 # environment
 VSCODE_LOG_STACK = false
 # environment
-VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-84a37354-1ae1-43e0-91e8-ac9aac74f3eb.sock
-# environment
-VSCODE_SERVER_TAR = /mnt/c/Users/GABRIE~1/AppData/Local/Temp/vscode-remote-wsl/30d9c6cd9483b2cc586687151bcbcd635f373630/vscode-server-stable-linux-x64.tar.gz
+VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-d96b7c5c-3c52-4371-9784-fb8914b58f31.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -75,7 +73,7 @@ PWD = /home/gabriel/processamento-de-imagens
 # default
 .LOADED := 
 # environment
-WSL_INTEROP = /run/WSL/12_interop
+WSL_INTEROP = /run/WSL/709_interop
 # environment
 PULSE_SERVER = /mnt/wslg/PulseServer
 # environment
@@ -156,10 +154,8 @@ TERM = xterm-256color
 VSCODE_EXTHOST_WILL_SEND_SOCKET = true
 # environment
 WSL_DISTRO_NAME = Ubuntu-20.04
-# environment
-MOTD_SHOWN = update-motd
 # variable set hash-table stats:
-# Load=73/1024=7%, Rehash=0, Collisions=4/95=4%
+# Load=71/1024=7%, Rehash=0, Collisions=4/93=4%
 
 # Pattern-specific Variable Values
 
@@ -167,9 +163,9 @@ MOTD_SHOWN = update-motd
 
 # Directories
 
-# . (device 2080, inode 77): 10 files, no impossibilities.
+# . (device 2080, inode 77): 11 files, no impossibilities.
 
-# 10 files, no impossibilities in 1 directories.
+# 11 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -219,12 +215,12 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 18 / storage = 163 B / avg = 9 B
-# current buf: size = 8162 B / used = 163 B / count = 18 / avg = 9 B
+# strcache buffers: 1 (0) / strings = 19 / storage = 176 B / avg = 9 B
+# current buf: size = 8162 B / used = 176 B / count = 19 / avg = 9 B
 
-# strcache performance: lookups = 21 / hit rate = 14%
+# strcache performance: lookups = 22 / hit rate = 13%
 # hash-table stats:
-# Load=18/8192=0%, Rehash=0, Collisions=1/21=5%
-# Finished Make data base on Mon Jun 20 22:33:04 2022
+# Load=19/8192=0%, Rehash=0, Collisions=1/22=5%
+# Finished Make data base on Tue Jun 21 18:37:58 2022
 
  
