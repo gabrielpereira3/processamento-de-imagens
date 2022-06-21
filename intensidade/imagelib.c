@@ -112,7 +112,7 @@ image img_get(char *name, int *nr, int *nc, int *ml, int tp)
         {
             int k;
             fscanf(fimg, "%d", &k);
-            ERROR(k > *ml, errormsg("Max pixel intensity int the image error: <%s>", name));
+            ERROR(k > *ml, errormsg("Max pixel intensity in the image error: <%s>", name));
             img[i] = k;
         }
         else
@@ -120,7 +120,7 @@ image img_get(char *name, int *nr, int *nc, int *ml, int tp)
             int r, g, b;
             fscanf(fimg, "%d %d %d", &r, &g, &b);
             ERROR(r > *ml || r < 0 || g > *ml || g < 0 || b > *ml || b < 0,
-                  errormsg("Max intensity of color int the image error: <%s>", name));
+                  errormsg("Max intensity of color in the image error: <%s>", name));
             img[i] = (r << 16) + (g << 8) + b;
         }
     fclose(fimg);
@@ -146,7 +146,7 @@ void img_put(image img, char *name, int nr, int nc, int ml, int tp)
     fprintf(fimg, "P%c\n", tp + '0');
     fputs(CREATOR, fimg);
     fprintf(fimg, "%d  %d\n", nc, nr);
-    if (tp != 1)
+    if (tp != BW)
         fprintf(fimg, "%d\n", ml);
     count = 0;
     for (int i = 0; i < nr * nc; i++)

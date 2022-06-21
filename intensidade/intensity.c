@@ -1,29 +1,36 @@
 /*-------------------------------------------------------------------------
- * 
- *   Program: Intensidade
- * By Luiz Eduardo da Silva.
+ * Tranformação de intensidade
+ * Por Luiz Eduardo da Silva.
  *-------------------------------------------------------------------------*/
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "imagelib.h"
 #include <math.h>
+#include "imagelib.h"
 
-void operacao(image In, image Out, int nl, int nc, int mn)
+void intensidade(image In, image Out, int nl, int nc, int mn)
 {
     float T[mn + 1];
-
-    for(int i = 0; i < mn + 1; i++)
-        T[i] = log(i + 1) / log(mn + 1) * mn;
-
+    float expo = 2;
+    for (int i = 0; i < mn + 1; i++)
+    {
+        //--- Transformacao Potência/Raiz
+        T[i] = pow(i, expo) / pow(mn, expo) * mn;
+        //--- Transformacao Logaritmica
+        // T[i] = log(i + 1) / log(mn + 1) * mn;
+        // printf("T[%d] = %.0f\n", i, T[i]);
+    }
     for (int i = 0; i < nl * nc; i++)
         Out[i] = T[In[i]];
 }
 
 void msg(char *s)
 {
-    printf("Erro no número de parâmetros\n");
+    printf("\nIntensidade");
+    printf("\n-------------------------------");
+    printf("\nUso:  %s  nome-imagem[.pgm] \n\n", s);
+    printf("    nome-imagem[.pgm] é o nome do arquivo da imagem \n");
     exit(1);
 }
 
@@ -32,36 +39,25 @@ void msg(char *s)
  *-------------------------------------------------------------------------*/
 int main(int argc, char *argv[])
 {
-    int nc, nr, ml, tp;
+    int nc, nr, ml;
     char *p, nameIn[100], nameOut[100], cmd[110];
     image In, Out;
-
-    if (argc < 3)
+    if (argc < 2)
         msg(argv[0]);
 
-    tp = atoi(argv[2]);
-
-    //-- define input/output file name
-    img_name(argv[1], nameIn, nameOut, tp);
-
+    img_name(argv[1], nameIn, nameOut, GRAY);
     //-- read image
-    In = img_get(nameIn, &nr, &nc, &ml, tp);
-
-    //-- create output image
+    In = img_get(nameIn, &nr, &nc, &ml, GRAY);
     Out = img_alloc(nr, nc);
 
     //-- transformation
-    operacao(In, Out, nr, nc, ml);
+    intensidade(In, Out, nr, nc, ml);
 
     //-- save image
     img_put(Out, nameOut, nr, nc, ml, GRAY);
-
-    //-- show image
     sprintf(cmd, "%s %s &", VIEW, nameOut);
-
     system(cmd);
     img_free(In);
     img_free(Out);
-
     return 0;
 }

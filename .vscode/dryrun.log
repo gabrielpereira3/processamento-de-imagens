@@ -1,0 +1,6 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/gabriel/processamento-de-imagens'
+make: Leaving directory '/home/gabriel/processamento-de-imagens'
+ 
+make: *** No targets specified and no makefile found.  Stop.
+

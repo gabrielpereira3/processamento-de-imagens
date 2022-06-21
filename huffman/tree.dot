@@ -1,8 +1,16 @@
 digraph {
 	node [fontename="Arial"];
-	n2 [shape = circle, label="3"]
-	n0 [shape = record, label="px=0|fq=1", color=RED]
-	n2 -> n0 [label=0]
-	n1 [shape = record, label="px=1|fq=2", color=RED]
-	n2 -> n1 [label=1]
+	n6 [shape = circle, label="23"]
+	n2 [shape = record, label="px=2|fq=11", color=RED]
+	n6 -> n2 [label=0]
+	n5 [shape = circle, label="12"]
+	n4 [shape = circle, label="4"]
+	n3 [shape = record, label="px=3|fq=1", color=RED]
+	n4 -> n3 [label=0]
+	n0 [shape = record, label="px=0|fq=3", color=RED]
+	n4 -> n0 [label=1]
+	n5 -> n4 [label=0]
+	n1 [shape = record, label="px=1|fq=8", color=RED]
+	n5 -> n1 [label=1]
+	n6 -> n5 [label=1]
 }

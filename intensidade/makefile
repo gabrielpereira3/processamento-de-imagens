@@ -4,7 +4,7 @@ CCFLAGS=-g
 LDFLAGS=-lm
 SOURCES=$(wildcard *.c)
 OBJECTS=$(SOURCES:.c=.o)
-TARGET=intensity
+TARGET=intens
 
 all: $(TARGET)
 
