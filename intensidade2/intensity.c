@@ -17,9 +17,11 @@ image intensity(image In)
     for (int i = 0; i < In->ml + 1; i++)
     {
         //--- Transformacao Potência/Raiz
-        T[i] = pow(i, expo) / pow(In->ml, expo) * In->ml;
+        // T[i] = pow(i, expo) / pow(In->ml, expo) * In->ml;
+        // T[i] = pow(i, 1/expo) / pow(In->ml, 1/expo) * In->ml;
         //--- Transformacao Logaritmica
-        // T[i] = log(i + 1) / log(In->ml + 1) * In->ml;
+         T[i] = log(i + 1) / log(In->ml + 1) * In->ml;
+         //printf("%f %d %d\n", T[i], i, In->ml);
         // printf("T[%d] = %.0f\n", i, T[i]);
     }
     for (int i = 0; i < In->nr * In->nc; i++)
