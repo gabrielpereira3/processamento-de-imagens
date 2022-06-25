@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Jun 21 18:37:58 2022
+# Make data base, printed on Fri Jun 24 22:33:36 2022
 
 # Variables
 
@@ -51,13 +51,13 @@ VSCODE_CWD = /mnt/c/Users/gabrielpereira/AppData/Local/Programs/Microsoft VS Cod
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
-PATH = /home/gabriel/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Microsoft/jdk-11.0.12.7-hotspot/bin:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/cygwin64:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/Program Files/MySQL/MySQL Server 8.0/bin:/mnt/c/Users/gabrielpereira/Documents/flutter/bin:/mnt/c/nginx:/mnt/c/Program Files/MySQL/MySQL Server 8.0/bin:/mnt/c/Users/gabrielpereira/AppData/Local/Microsoft/WindowsApps:/mnt/c/cygwin64:/mnt/c/Program Files/JetBrains/IntelliJ IDEA 2021.3.2/bin:/mnt/c/apache-maven-3.8.4/bin:/mnt/c/Users/gabrielpereira/Documents/flutter/bin:/mnt/c/nginx:/mnt/c/Users/gabrielpereira/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin
+PATH = /home/gabriel/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Microsoft/jdk-11.0.12.7-hotspot/bin:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/cygwin64:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/Program Files/MySQL/MySQL Server 8.0/bin:/mnt/c/Users/gabrielpereira/Documents/flutter/bin:/mnt/c/nginx:/mnt/c/Program Files (x86)/dotnet/:/mnt/c/Program Files/MySQL/MySQL Server 8.0/bin:/mnt/c/Users/gabrielpereira/AppData/Local/Microsoft/WindowsApps:/mnt/c/cygwin64:/mnt/c/Program Files/JetBrains/IntelliJ IDEA 2021.3.2/bin:/mnt/c/apache-maven-3.8.4/bin:/mnt/c/Users/gabrielpereira/Documents/flutter/bin:/mnt/c/nginx:/mnt/c/Users/gabrielpereira/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin
 # environment
 XDG_RUNTIME_DIR = /mnt/wslg/runtime-dir
 # environment
 VSCODE_LOG_STACK = false
 # environment
-VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-d96b7c5c-3c52-4371-9784-fb8914b58f31.sock
+VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-56258ede-ba52-47a9-ab70-67ff90aa041b.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -73,7 +73,7 @@ PWD = /home/gabriel/processamento-de-imagens
 # default
 .LOADED := 
 # environment
-WSL_INTEROP = /run/WSL/709_interop
+WSL_INTEROP = /run/WSL/11_interop
 # environment
 PULSE_SERVER = /mnt/wslg/PulseServer
 # environment
@@ -85,7 +85,7 @@ LESSCLOSE = /usr/bin/lesspipe %s %s
 # environment
 LOGNAME = gabriel
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # automatic
@@ -154,8 +154,10 @@ TERM = xterm-256color
 VSCODE_EXTHOST_WILL_SEND_SOCKET = true
 # environment
 WSL_DISTRO_NAME = Ubuntu-20.04
+# environment
+MOTD_SHOWN = update-motd
 # variable set hash-table stats:
-# Load=71/1024=7%, Rehash=0, Collisions=4/93=4%
+# Load=72/1024=7%, Rehash=0, Collisions=4/94=4%
 
 # Pattern-specific Variable Values
 
@@ -163,9 +165,9 @@ WSL_DISTRO_NAME = Ubuntu-20.04
 
 # Directories
 
-# . (device 2080, inode 77): 11 files, no impossibilities.
+# . (device 2080, inode 77): 12 files, no impossibilities.
 
-# 11 files, no impossibilities in 1 directories.
+# 12 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -215,12 +217,12 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 19 / storage = 176 B / avg = 9 B
-# current buf: size = 8162 B / used = 176 B / count = 19 / avg = 9 B
+# strcache buffers: 1 (0) / strings = 20 / storage = 187 B / avg = 9 B
+# current buf: size = 8162 B / used = 187 B / count = 20 / avg = 9 B
 
-# strcache performance: lookups = 22 / hit rate = 13%
+# strcache performance: lookups = 23 / hit rate = 13%
 # hash-table stats:
-# Load=19/8192=0%, Rehash=0, Collisions=1/22=5%
-# Finished Make data base on Tue Jun 21 18:37:58 2022
+# Load=20/8192=0%, Rehash=0, Collisions=1/23=4%
+# Finished Make data base on Fri Jun 24 22:33:36 2022
 
  
