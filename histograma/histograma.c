@@ -9,7 +9,7 @@
 #include <math.h>
 #include "imagelib.h"
 
-image intensity(image In)
+image histograma(image In)
 {
     int T[In->ml + 1];
     float M[In->ml + 1];
@@ -60,7 +60,7 @@ int main(int argc, char *argv[])
     //-- read image
     In = img_get(nameIn, GRAY);
     //-- transformation
-    Out = intensity(In);
+    Out = histograma(In);
     //-- save image
     img_put(Out, nameOut, GRAY);
 

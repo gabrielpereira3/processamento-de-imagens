@@ -31,6 +31,7 @@ void convolucao(image In, image Out, int nl, int nc, int mn)
     for (int i = 1; i < nl - 1; i++)
         for (int j = 1; j < nc - 1; j++)
         {
+            printf("%d ", In[i * nc + j]);
             int sum = 0, vetor[9];
             vetor[0] = In[(i - 1) * nc + (j - 1)];
             vetor[1] = In[(i - 1) * nc + j];
