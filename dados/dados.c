@@ -19,13 +19,13 @@ int posicao_inicial = 0;
 int posicao_final = 39;
 int limite_colunas = 0;
 
+// Carrega o dado que representa o pixel passado pelo icone
 image carrega_dado(image dado, image Out, image Icon){
     int limite = posicao_final;
     int inicio = posicao_inicial;
 
     for (int i = 0; i < 1600; i++){
         Out->px[inicio] = dado->px[i];
-        //printf(" %d ", inicio);
         if(inicio < limite-1){
             inicio++;
         }else{
