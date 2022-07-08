@@ -1,7 +1,12 @@
-/*-------------------------------------------------------------------------
- * Tranformação de dados
- * Por Luiz Eduardo da Silva.
- *-------------------------------------------------------------------------*/
+/*=============================================================
+ * UNIFAL = Universidade Federal de Alfenas .
+ * BACHARELADO EM CIENCIA DA COMPUTACAO.
+ * Trabalho . . : Imagem de dados
+ * Disciplina : Processamento de Imagens
+ * Professor . : Luiz Eduardo da Silva
+ * Aluno . . . . . : Gabriel Pereira Soares
+ * Data . . . . . . : 08/07/2022
+*=============================================================*/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -47,6 +52,7 @@ image dados(image In, image Out, image Icon)
 
     image dado0, dado1, dado2, dado3, dado4, dado5, dado6;
 
+    // preto-0.pgm (DADO PRETO)
     dado0 = img_get("preto-0.pgm", GRAY);
     dado1 = img_get("preto-1.pgm", GRAY);
     dado2 = img_get("preto-2.pgm", GRAY);
@@ -54,6 +60,25 @@ image dados(image In, image Out, image Icon)
     dado4 = img_get("preto-4.pgm", GRAY);
     dado5 = img_get("preto-5.pgm", GRAY);
     dado6 = img_get("preto-6.pgm", GRAY);
+
+    // 0.pgm (DADO BRANCO)
+    // dado0 = img_get("0.pgm", GRAY);
+    // dado1 = img_get("1.pgm", GRAY);
+    // dado2 = img_get("2.pgm", GRAY);
+    // dado3 = img_get("3.pgm", GRAY);
+    // dado4 = img_get("4.pgm", GRAY);
+    // dado5 = img_get("5.pgm", GRAY);
+    // dado6 = img_get("6.pgm", GRAY);
+
+    // dado-0.pgm (DADO MUITO PRETO)
+    // dado0 = img_get("dado-0.pgm", GRAY);
+    // dado1 = img_get("dado-1.pgm", GRAY);
+    // dado2 = img_get("dado-2.pgm", GRAY);
+    // dado3 = img_get("dado-3.pgm", GRAY);
+    // dado4 = img_get("dado-4.pgm", GRAY);
+    // dado5 = img_get("dado-5.pgm", GRAY);
+    // dado6 = img_get("dado-6.pgm", GRAY);
+
 
     // Transformando imagem em ícone
 
