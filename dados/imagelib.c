@@ -1,3 +1,13 @@
+/*=============================================================
+ * UNIFAL = Universidade Federal de Alfenas .
+ * BACHARELADO EM CIENCIA DA COMPUTACAO.
+ * Trabalho . . : Imagem de dados
+ * Disciplina : Processamento de Imagens
+ * Professor . : Luiz Eduardo da Silva
+ * Aluno . . . . . : Gabriel Pereira Soares
+ * Data . . . . . . : 08/07/2022
+*=============================================================*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
